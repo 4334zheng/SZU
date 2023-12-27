@@ -1,0 +1,36 @@
+.ORIG x2000
+	ST R0,SaveR0
+	ST R1,SaveR1
+	ST R2,SaveR2
+	ST R3,SaveR3
+	
+	LD R1,KBSR
+	LDR R0,R1,#0
+	AND R1,R1,#0
+	ADD R1,R1,#10
+Loop	LD R2,DSR
+wait	LDR R3,R2,#0
+	BRzp wait
+	LD R2,DDR
+	STR R0,R2,#0
+	ADD R1,R1,#-1
+	BRp Loop
+	
+	LD R0,SaveR0
+	LD R1,SaveR1
+	LD R2,SaveR2
+	LD R3,SaveR3
+
+	RTI
+
+KBSR	.FILL xfe00
+KBDR	.FILL xfe02
+DSR	.FILL xfe04
+DDR	.FILL xfe06
+SaveR0	.FILL x0000
+SaveR1	.FILL x0000
+SaveR2	.FILL x0000
+SaveR3	.FILL x0000
+x_7fff	.FILL 0x7fff
+
+.END

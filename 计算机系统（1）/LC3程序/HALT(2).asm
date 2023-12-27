@@ -1,0 +1,78 @@
+.ORIG x2000
+	ST R0,SaveR0
+	ST R1,SaveR1
+	ST R2,SaveR2
+	ST R3,SaveR3
+	ST R4,SaveR4
+
+	ADD R6,R6,#-1	;将数据压入栈
+	STR R0,R6,#0
+	ADD R6,R6,#-1
+	STR R1,R6,#0
+	ADD R6,R6,#-1
+	STR R2,R6,#0
+	ADD R6,R6,#-1
+	STR R3,R6,#0
+	ADD R6,R6,#-1
+	STR R4,R6,#0
+
+	LD R4,STRING	;字符串首地址
+LOOP1	LDI R1,KBSR	;检查键盘状态
+	BRzp LOOP1
+	LDI R0,KBDR
+	LD R2,BREAK	;检查是否输入回车
+	ADD R2,R2,R0
+	BRz LOOP
+	STR R0,R4,#0	;不是回车，将键入的字符写到字符串中
+	ADD R4,R4,#1
+	BRnzp LOOP1
+LOOP	AND R0,R0,#0	;将回车作为字符串的结束标志
+	ADD R0,R0,#10
+	STR R0,R4,#0
+NEXT1	AND R3,R3,#0
+	ADD R3,R3,#10	;循环十次
+LOOP3	LD R4,STRING
+LOOP5	LDR R0,R4,#0	;读取字符串
+	ADD R4,R4,#1	
+LOOP4	LDI R1,DSR	;检查显示器的状态
+	BRzp LOOP4
+	LD R2,BREAK
+	ADD R2,R2,R0
+	BRz NEXT2	;是回车，执行下一次循环，进行字符串的十次输出
+	STI R0,DDR	;不是就输出所键入的字符
+	BRnzp LOOP5
+NEXT2	ADD R3,R3,#-1	;
+	BRp LOOP3
+
+	LDR R4,R6,#0	;从栈中取回数据
+	ADD R6,R6,#1
+	LDR R3,R6,#0
+	ADD R6,R6,#1
+	LDR R2,R6,#0
+	ADD R6,R6,#1
+	LDR R1,R6,#0
+	ADD R6,R6,#1
+	LDR R0,R6,#0
+	ADD R6,R6,#1
+
+	LD R0,SaveR0
+	LD R1,SaveR1
+	LD R2,SaveR2
+	LD R3,SaveR3
+	LD R4,SaveR4
+
+	RTI
+
+KBSR	.FILL xFE00
+KBDR	.FILL xFE02
+DSR	.FILL xFE04
+DDR 	.FILL xFE06
+BREAK	.FILL xFFF6	;-x000A
+STRING	.FILL x4000
+SaveR0	.FILL x0000
+SaveR1	.FILL x0000
+SaveR2	.FILL x0000
+SaveR3	.FILL x0000
+SaveR4	.FILL x0000
+
+.END

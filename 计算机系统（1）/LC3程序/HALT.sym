@@ -1,0 +1,13 @@
+//Symbol Name		Page Address
+//----------------	------------
+//	DDR                     2017
+//	DSR                     2016
+//	KBDR                    2015
+//	KBSR                    2014
+//	Loop                    2008
+//	SaveR0                  2018
+//	SaveR1                  2019
+//	SaveR2                  201A
+//	SaveR3                  201B
+//	wait                    2009
+//	x_7fff                  201C

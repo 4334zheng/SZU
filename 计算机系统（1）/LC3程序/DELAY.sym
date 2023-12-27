@@ -1,0 +1,13 @@
+//Symbol Name		Page Address
+//----------------	------------
+//	X_4000                  3063
+//	itfunc                  301B
+//	itptr                   301A
+//	kbsr                    3062
+//	lpcnt                   301D
+//	m_loop                  3007
+//	stptr                   301C
+//	str1                    301E
+//	str2                    3040
+//	wait1                   300E
+//	wait2                   3017

@@ -1,0 +1,15 @@
+//Symbol Name		Page Address
+//----------------	------------
+//	COUNT                   3062
+//	DELAY                   305C
+//	ENDL                    305B
+//	IE                      305A
+//	KBSR                    3059
+//	REP                     305E
+//	SaveR1                  3063
+//	func                    3013
+//	m_loop                  3006
+//	ptr                     3012
+//	stptr                   3014
+//	str1                    3015
+//	str2                    3037
