@@ -1,0 +1,11 @@
+students.json
+ <script language="JavaScript">
+
+     	var student1 ={"studentNo": "2022150278", "name":"He Gaojie", 
+                                                   "gender": "male", "specialty":"Software Engineering" };
+     	var student1 ={"studentNo": "2022150278", "name":"He Gaojie", 
+                                                        "gender": "male", "specialty":"Software Engineering" };
+	var student1 ={"studentNo": "2022150278", "name":"He Gaojie", 
+                                                        "gender": "male", "specialty":"Software Engineering" };
+
+ </script>

@@ -1,0 +1,387 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<students>
+  <student no="1">
+    <number>2016154105</number>
+    <name>郑力升</name>
+    <gender>男</gender>
+    <major>物联网工程</major>
+  </student>
+  <student no="2">
+    <number>2017151056</number>
+    <name>梁煜辉</name>
+    <gender>男</gender>
+    <major>软件工程</major>
+  </student>
+  <student no="3">
+    <number>2017152020</number>
+    <name>李铮</name>
+    <gender>男</gender>
+    <major>计算机科学与技术</major>
+  </student>
+  <student no="4">
+    <number>2018111124</number>
+    <name>杨澳</name>
+    <gender>男</gender>
+    <major>计算机科学与技术</major>
+  </student>
+  <student no="5">
+    <number>2018151010</number>
+    <name>周韬</name>
+    <gender>男</gender>
+    <major>软件工程</major>
+  </student>
+  <student no="6">
+    <number>2018151028</number>
+    <name>吴东蔚</name>
+    <gender>男</gender>
+    <major>软件工程</major>
+  </student>
+  <student no="7">
+    <number>2019151015</number>
+    <name>李文博</name>
+    <gender>男</gender>
+    <major>软件工程</major>
+  </student>
+  <student no="8">
+    <number>2019152022</number>
+    <name>陈泽森</name>
+    <gender>男</gender>
+    <major>计算机科学与技术</major>
+  </student>
+  <student no="9">
+    <number>2019152036</number>
+    <name>邓宣润</name>
+    <gender>男</gender>
+    <major>计算机科学与技术</major>
+  </student>
+  <student no="10">
+    <number>2019152047</number>
+    <name>柯秉坤</name>
+    <gender>男</gender>
+    <major>计算机科学与技术</major>
+  </student>
+  <student no="11">
+    <number>2019202021</number>
+    <name>郑梓坚</name>
+    <gender>男</gender>
+    <major>计算机科学与技术</major>
+  </student>
+  <student no="12">
+    <number>2019282028</number>
+    <name>张潇誉</name>
+    <gender>男</gender>
+    <major>软件工程</major>
+  </student>
+  <student no="13">
+    <number>2020112056</number>
+    <name>黄灿彬</name>
+    <gender>男</gender>
+    <major>计算机科学与技术</major>
+  </student>
+  <student no="14">
+    <number>2020151001</number>
+    <name>余庆耿</name>
+    <gender>男</gender>
+    <major>软件工程</major>
+  </student>
+  <student no="15">
+    <number>2020151008</number>
+    <name>郭梓濠</name>
+    <gender>男</gender>
+    <major>软件工程</major>
+  </student>
+  <student no="16">
+    <number>2020151010</number>
+    <name>王子悠</name>
+    <gender>女</gender>
+    <major>软件工程</major>
+  </student>
+  <student no="17">
+    <number>2020151011</number>
+    <name>高蕴青</name>
+    <gender>女</gender>
+    <major>软件工程</major>
+  </student>
+  <student no="18">
+    <number>2020151014</number>
+    <name>郑源锋</name>
+    <gender>男</gender>
+    <major>软件工程</major>
+  </student>
+  <student no="19">
+    <number>2020151018</number>
+    <name>郭海东</name>
+    <gender>男</gender>
+    <major>软件工程</major>
+  </student>
+  <student no="20">
+    <number>2020151019</number>
+    <name>赖劲维</name>
+    <gender>男</gender>
+    <major>软件工程</major>
+  </student>
+  <student no="21">
+    <number>2020151026</number>
+    <name>林润杰</name>
+    <gender>男</gender>
+    <major>软件工程</major>
+  </student>
+  <student no="22">
+    <number>2020151031</number>
+    <name>林子健</name>
+    <gender>男</gender>
+    <major>软件工程</major>
+  </student>
+  <student no="23">
+    <number>2020151033</number>
+    <name>梁圣钊</name>
+    <gender>男</gender>
+    <major>软件工程</major>
+  </student>
+  <student no="24">
+    <number>2020151037</number>
+    <name>陈战</name>
+    <gender>男</gender>
+    <major>软件工程</major>
+  </student>
+  <student no="25">
+    <number>2020151038</number>
+    <name>陈子烨</name>
+    <gender>男</gender>
+    <major>软件工程</major>
+  </student>
+  <student no="26">
+    <number>2020151040</number>
+    <name>翁邦越</name>
+    <gender>男</gender>
+    <major>软件工程</major>
+  </student>
+  <student no="27">
+    <number>2020151044</number>
+    <name>钟礼泽</name>
+    <gender>男</gender>
+    <major>软件工程</major>
+  </student>
+  <student no="28">
+    <number>2020151045</number>
+    <name>霍俊禧</name>
+    <gender>男</gender>
+    <major>软件工程</major>
+  </student>
+  <student no="29">
+    <number>2020151047</number>
+    <name>莫鸿辉</name>
+    <gender>男</gender>
+    <major>软件工程</major>
+  </student>
+  <student no="30">
+    <number>2020151056</number>
+    <name>刘圣涛</name>
+    <gender>男</gender>
+    <major>软件工程</major>
+  </student>
+  <student no="31">
+    <number>2020151060</number>
+    <name>何春豪</name>
+    <gender>男</gender>
+    <major>软件工程</major>
+  </student>
+  <student no="32">
+    <number>2020151062</number>
+    <name>曹炜基</name>
+    <gender>男</gender>
+    <major>软件工程</major>
+  </student>
+  <student no="33">
+    <number>2020151065</number>
+    <name>李耀华</name>
+    <gender>男</gender>
+    <major>软件工程</major>
+  </student>
+  <student no="34">
+    <number>2020151071</number>
+    <name>周芯羽</name>
+    <gender>女</gender>
+    <major>软件工程</major>
+  </student>
+  <student no="35">
+    <number>2020151075</number>
+    <name>林睿</name>
+    <gender>男</gender>
+    <major>软件工程</major>
+  </student>
+  <student no="36">
+    <number>2020151076</number>
+    <name>刘冠男</name>
+    <gender>男</gender>
+    <major>软件工程</major>
+  </student>
+  <student no="37">
+    <number>2020151079</number>
+    <name>何宇湄</name>
+    <gender>女</gender>
+    <major>软件工程</major>
+  </student>
+  <student no="38">
+    <number>2020151080</number>
+    <name>魏扬俊</name>
+    <gender>男</gender>
+    <major>软件工程</major>
+  </student>
+  <student no="39">
+    <number>2020151087</number>
+    <name>钟宏坤</name>
+    <gender>男</gender>
+    <major>软件工程</major>
+  </student>
+  <student no="40">
+    <number>2020151092</number>
+    <name>林美欣</name>
+    <gender>女</gender>
+    <major>软件工程</major>
+  </student>
+  <student no="41">
+    <number>2020151097</number>
+    <name>玛热亚·米吉提</name>
+    <gender>女</gender>
+    <major>软件工程</major>
+  </student>
+  <student no="42">
+    <number>2020151099</number>
+    <name>茹飞亚·阿布都艾尼</name>
+    <gender>女</gender>
+    <major>软件工程</major>
+  </student>
+  <student no="43">
+    <number>2020151100</number>
+    <name>苏海拉·阿地里江</name>
+    <gender>女</gender>
+    <major>软件工程</major>
+  </student>
+  <student no="44">
+    <number>2020152032</number>
+    <name>黄新梅</name>
+    <gender>女</gender>
+    <major>计算机科学与技术</major>
+  </student>
+  <student no="45">
+    <number>2020152038</number>
+    <name>黄镇希</name>
+    <gender>男</gender>
+    <major>计算机科学与技术</major>
+  </student>
+  <student no="46">
+    <number>2020152051</number>
+    <name>王晓丽</name>
+    <gender>女</gender>
+    <major>计算机科学与技术</major>
+  </student>
+  <student no="47">
+    <number>2020152078</number>
+    <name>郭旭阳</name>
+    <gender>男</gender>
+    <major>计算机科学与技术</major>
+  </student>
+  <student no="48">
+    <number>2020152083</number>
+    <name>陈杰</name>
+    <gender>女</gender>
+    <major>计算机科学与技术</major>
+  </student>
+  <student no="49">
+    <number>2020152090</number>
+    <name>张鑫慧</name>
+    <gender>女</gender>
+    <major>计算机科学与技术</major>
+  </student>
+  <student no="50">
+    <number>2020152125</number>
+    <name>黄诗曌</name>
+    <gender>女</gender>
+    <major>计算机科学与技术</major>
+  </student>
+  <student no="51">
+    <number>2020282107</number>
+    <name>周琦婧</name>
+    <gender>女</gender>
+    <major>软件工程</major>
+  </student>
+  <student no="52">
+    <number>2020284008</number>
+    <name>蔡佳伟</name>
+    <gender>男</gender>
+    <major>软件工程</major>
+  </student>
+  <student no="53">
+    <number>2020285033</number>
+    <name>陈杰智</name>
+    <gender>男</gender>
+    <major>软件工程</major>
+  </student>
+  <student no="54">
+    <number>2021104029</number>
+    <name>刘雨鑫</name>
+    <gender>男</gender>
+    <major>计算机科学与技术（创新班）</major>
+  </student>
+  <student no="55">
+    <number>2021150087</number>
+    <name>李佳伟</name>
+    <gender>男</gender>
+    <major>计算机科学与技术</major>
+  </student>
+  <student no="56">
+    <number>2021150202</number>
+    <name>张为</name>
+    <gender>男</gender>
+    <major>计算机科学与技术（数学与计算机实验班）</major>
+  </student>
+  <student no="57">
+    <number>2021152024</number>
+    <name>马咏韬</name>
+    <gender>男</gender>
+    <major>计算机科学与技术（卓越班）</major>
+  </student>
+  <student no="58">
+    <number>2021152032</number>
+    <name>黄鹞锐</name>
+    <gender>男</gender>
+    <major>计算机科学与技术（数学与计算机实验班）</major>
+  </student>
+  <student no="59">
+    <number>2021190060</number>
+    <name>罗行</name>
+    <gender>男</gender>
+    <major>计算机科学与技术（创新班）</major>
+  </student>
+  <student no="60">
+    <number>2020151084</number>
+    <name>韦承昊</name>
+    <gender>男</gender>
+    <major>软件工程</major>
+  </student>
+  <student no="61">
+    <number>2020151015</number>
+    <name>谭文权</name>
+    <gender>男</gender>
+    <major>软件工程</major>
+  </student>
+  <student no="62">
+    <number>2020151070</number>
+    <name>伍政韬</name>
+    <gender>男</gender>
+    <major>软件工程</major>
+  </student>
+  <student no="63">
+    <number>2020151073</number>
+    <name>王卓耀</name>
+    <gender>男</gender>
+    <major>软件工程</major>
+  </student>
+  <student no="64">
+    <number>2020151022</number>
+    <name>郑彦薇</name>
+    <gender>女</gender>
+    <major>软件工程</major>
+  </student>
+</students>

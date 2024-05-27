@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>json01.创建JavaScript对象并访问属性</title>
+    <script type="text/javascript">
+        function f1() {
+            //使用var方法创建对象
+            var obj1 = {};
+            //添加属性
+            obj1.name = "郑彦薇";
+            obj1.age = "20";
+            //html页面显示对象信息
+            alert("名字:"+obj1.name+"\n"+"年龄:"+obj1.age);
+        }
+        function f2(){
+            var obj2 = {};
+            obj2.name = "郑彦薇";
+            //obj2对象中的address属性也是一个对象
+            obj2.address = {};
+            obj2.address.city = "深圳";
+            obj2.address.street = "聚翰";
+            obj2.address.room = "1203";
+            alert("名字:"+obj2.name+"\n"+"宿舍地址:"+obj2.address.city+obj2.address.street+obj2.address.room);
+        }
+    </script>
+</head>
+<body>
+    <!--html页面中点击不同连接查看对象属性-->
+    <a href = "javascript:;" onclick = "f1();">查看个人信息</a>
+    </br>
+    <a href = "javascript:;" onclick="f2();">查看宿舍地址</a>
+</body>
+</html>

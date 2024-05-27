@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/javascript;charset=utf-8">
+    <title>json03.JSON格式字符串和JSON对象之间的转换</title>
+    <script type="text/javascript">
+      //将字符串转换为JSON对象
+      function jsStrToObj(){
+        var str='{"name":"Luffy","age":17}';
+        //使用JSON.parse()方法进行转换
+        var json = JSON.parse(str);
+        console.log(json);
+        alert(json.name);//访问json对象中的name属性
+      }
+      //将字符串转换为JSON数组
+      function jsStrToArr(){
+        var str='[{"stuNo":20170031,"name":"何立立"},{"stuNo":20170032,"name":"赵多多"}]';
+        //使用JSON.parse()方法进行转换
+        var arr = JSON.parse(str);
+        alert(arr[1].name);//访问数组第二个元素的name属性值
+      }
+      //JSON对象转换为字符串
+      function jsObjToStr(){
+        var score={'stuNo':2020151022, 'name':'郑彦薇',
+          'scores':[{'课程':'中间件技术','成绩':95},
+            {'课程':'数据结构','成绩':90},
+            {'课程':'计算机网络','成绩':90}]
+        }
+        //使用JSON.stringify()方法进行转换
+        var str=JSON.stringify(score);
+        alert(str);//输出转换后的字符串
+      }
+    </script>
+</head>
+<body>
+  <a href="javascript:" onclick="jsStrToObj();">JSON字符串转换为对象</a>
+  </br>
+  <a href="javascript:" onclick="jsStrToArr();">JSON字符串转换为JSON数组</a>
+  </br>
+  <a href="javascript:" onclick="jsObjToStr();">JSON对象转换为JSON字符串</a>
+</body>
+</html>

@@ -1,0 +1,967 @@
+<?xml version="1.0"?>
+<?mso-application progid="Excel.Sheet"?>
+<Workbook xmlns="urn:schemas-microsoft-com:office:spreadsheet"
+ xmlns:o="urn:schemas-microsoft-com:office:office"
+ xmlns:x="urn:schemas-microsoft-com:office:excel"
+ xmlns:ss="urn:schemas-microsoft-com:office:spreadsheet"
+ xmlns:html="http://www.w3.org/TR/REC-html40">
+ <DocumentProperties xmlns="urn:schemas-microsoft-com:office:office">
+  <Author>Apache POI</Author>
+  <LastAuthor>数字图像处理</LastAuthor>
+  <Created>2020-10-13T07:36:33Z</Created>
+  <Version>15.00</Version>
+ </DocumentProperties>
+ <OfficeDocumentSettings xmlns="urn:schemas-microsoft-com:office:office">
+  <AllowPNG/>
+ </OfficeDocumentSettings>
+ <ExcelWorkbook xmlns="urn:schemas-microsoft-com:office:excel">
+  <WindowHeight>5892</WindowHeight>
+  <WindowWidth>16716</WindowWidth>
+  <WindowTopX>0</WindowTopX>
+  <WindowTopY>0</WindowTopY>
+  <ProtectStructure>False</ProtectStructure>
+  <ProtectWindows>False</ProtectWindows>
+ </ExcelWorkbook>
+ <Styles>
+  <Style ss:ID="Default" ss:Name="Normal">
+   <Alignment ss:Vertical="Center"/>
+   <Borders/>
+   <Font ss:FontName="宋体" x:CharSet="134" ss:Size="11" ss:Color="#000000"/>
+   <Interior/>
+   <NumberFormat/>
+   <Protection/>
+  </Style>
+  <Style ss:ID="s16">
+   <Alignment ss:Vertical="Center" ss:WrapText="1"/>
+   <Borders/>
+   <Font ss:FontName="SimSun" x:CharSet="134" ss:Size="9"/>
+  </Style>
+  <Style ss:ID="s19">
+   <Alignment ss:Horizontal="Left" ss:Vertical="Center" ss:WrapText="1"/>
+   <Borders/>
+   <Font ss:FontName="SimSun" x:CharSet="134" ss:Size="11"/>
+  </Style>
+  <Style ss:ID="s20">
+   <Alignment ss:Vertical="Center" ss:WrapText="1"/>
+   <Borders/>
+   <Font ss:FontName="SimSun" x:CharSet="134"/>
+  </Style>
+  <Style ss:ID="s23">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Center" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"
+     ss:Color="#000000"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"
+     ss:Color="#000000"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"
+     ss:Color="#000000"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"
+     ss:Color="#000000"/>
+   </Borders>
+   <Font ss:FontName="SimSun" x:CharSet="134"/>
+  </Style>
+  <Style ss:ID="s26">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Center" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"
+     ss:Color="#000000"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"
+     ss:Color="#000000"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"
+     ss:Color="#000000"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"
+     ss:Color="#000000"/>
+   </Borders>
+   <Font ss:FontName="SimSun" x:CharSet="134" ss:Size="11"/>
+  </Style>
+  <Style ss:ID="s28">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Center" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"
+     ss:Color="#000000"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"
+     ss:Color="#000000"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"
+     ss:Color="#000000"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"
+     ss:Color="#000000"/>
+   </Borders>
+   <Font ss:FontName="SimSun" x:CharSet="134" ss:Size="9"/>
+  </Style>
+  <Style ss:ID="s29">
+   <Alignment ss:Vertical="Center" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"
+     ss:Color="#000000"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"
+     ss:Color="#000000"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"
+     ss:Color="#000000"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"
+     ss:Color="#000000"/>
+   </Borders>
+   <Font ss:FontName="SimSun" x:CharSet="134" ss:Size="9"/>
+  </Style>
+  <Style ss:ID="s31">
+   <Alignment ss:Vertical="Center" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"
+     ss:Color="#000000"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"
+     ss:Color="#000000"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"
+     ss:Color="#000000"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"
+     ss:Color="#000000"/>
+   </Borders>
+   <Font ss:FontName="SimSun" x:CharSet="134" ss:Size="8"/>
+  </Style>
+  <Style ss:ID="s32">
+   <Alignment ss:Vertical="Center" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"
+     ss:Color="#000000"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"
+     ss:Color="#000000"/>
+   </Borders>
+   <Font ss:FontName="SimSun" x:CharSet="134" ss:Size="9"/>
+  </Style>
+  <Style ss:ID="s35">
+   <Alignment ss:Vertical="Center" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"
+     ss:Color="#000000"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"
+     ss:Color="#000000"/>
+   </Borders>
+   <Font ss:FontName="SimSun" x:CharSet="134" ss:Size="9"/>
+  </Style>
+  <Style ss:ID="s36">
+   <Alignment ss:Vertical="Center" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"
+     ss:Color="#000000"/>
+   </Borders>
+   <Font ss:FontName="SimSun" x:CharSet="134" ss:Size="9"/>
+  </Style>
+  <Style ss:ID="s86">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Center" ss:WrapText="1"/>
+   <Borders/>
+   <Font ss:FontName="SimSun" x:CharSet="134" ss:Size="16" ss:Bold="1"/>
+  </Style>
+  <Style ss:ID="s87">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Center" ss:WrapText="1"/>
+   <Borders/>
+   <Font ss:FontName="SimSun" x:CharSet="134" ss:Size="9"/>
+  </Style>
+  <Style ss:ID="s89">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Center" ss:WrapText="1"/>
+   <Borders/>
+   <Font ss:FontName="SimSun" x:CharSet="134"/>
+  </Style>
+  <Style ss:ID="s90">
+   <Alignment ss:Horizontal="Right" ss:Vertical="Center" ss:WrapText="1"/>
+   <Borders/>
+   <Font ss:FontName="SimSun" x:CharSet="134"/>
+  </Style>
+  <Style ss:ID="s92">
+   <Alignment ss:Horizontal="Left" ss:Vertical="Center" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"
+     ss:Color="#000000"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"
+     ss:Color="#000000"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"
+     ss:Color="#000000"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"
+     ss:Color="#000000"/>
+   </Borders>
+   <Font ss:FontName="SimSun" x:CharSet="134"/>
+  </Style>
+  <Style ss:ID="s93">
+   <Alignment ss:Vertical="Center" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"
+     ss:Color="#000000"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"
+     ss:Color="#000000"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"
+     ss:Color="#000000"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"
+     ss:Color="#000000"/>
+   </Borders>
+   <Font ss:FontName="SimSun" x:CharSet="134"/>
+  </Style>
+  <Style ss:ID="s95">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Center" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"
+     ss:Color="#000000"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"
+     ss:Color="#000000"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"
+     ss:Color="#000000"/>
+   </Borders>
+   <Font ss:FontName="SimSun" x:CharSet="134" ss:Size="8"/>
+  </Style>
+  <Style ss:ID="s97">
+   <Alignment ss:Horizontal="Left" ss:Vertical="Center" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"
+     ss:Color="#000000"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"
+     ss:Color="#000000"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"
+     ss:Color="#000000"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"
+     ss:Color="#000000"/>
+   </Borders>
+   <Font ss:FontName="SimSun" x:CharSet="134" ss:Size="7"/>
+  </Style>
+  <Style ss:ID="s98">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Center" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"
+     ss:Color="#000000"/>
+   </Borders>
+   <Font ss:FontName="SimSun" x:CharSet="134" ss:Size="11"/>
+  </Style>
+  <Style ss:ID="s99">
+   <Alignment ss:Vertical="Center" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"
+     ss:Color="#000000"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"
+     ss:Color="#000000"/>
+   </Borders>
+   <Font ss:FontName="SimSun" x:CharSet="134" ss:Size="9"/>
+  </Style>
+  <Style ss:ID="s101">
+   <Alignment ss:Vertical="Center" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"
+     ss:Color="#000000"/>
+   </Borders>
+   <Font ss:FontName="SimSun" x:CharSet="134" ss:Size="11"/>
+  </Style>
+  <Style ss:ID="s102">
+   <Alignment ss:Vertical="Center" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"
+     ss:Color="#000000"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"
+     ss:Color="#000000"/>
+   </Borders>
+   <Font ss:FontName="SimSun" x:CharSet="134" ss:Size="9"/>
+  </Style>
+ </Styles>
+ <Worksheet ss:Name="sheet1">
+  <Table ss:ExpandedColumnCount="22" ss:ExpandedRowCount="40" x:FullColumns="1"
+   x:FullRows="1" ss:DefaultColumnWidth="52.8" ss:DefaultRowHeight="14.4">
+   <Column ss:AutoFitWidth="0" ss:Width="26.4"/>
+   <Column ss:AutoFitWidth="0" ss:Width="66"/>
+   <Column ss:AutoFitWidth="0" ss:Width="48.6"/>
+   <Column ss:AutoFitWidth="0" ss:Width="13.2"/>
+   <Column ss:AutoFitWidth="0" ss:Width="46.800000000000004"/>
+   <Column ss:AutoFitWidth="0" ss:Width="18" ss:Span="9"/>
+   <Column ss:Index="16" ss:AutoFitWidth="0" ss:Width="16.8"/>
+   <Column ss:AutoFitWidth="0" ss:Width="18"/>
+   <Column ss:AutoFitWidth="0" ss:Width="16.8"/>
+   <Column ss:AutoFitWidth="0" ss:Width="34.199999999999996"/>
+   <Column ss:AutoFitWidth="0" ss:Width="27.6" ss:Span="1"/>
+   <Column ss:Index="22" ss:AutoFitWidth="0" ss:Width="21.599999999999998"/>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:MergeAcross="21" ss:StyleID="s16"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="24.15">
+    <Cell ss:MergeAcross="21" ss:StyleID="s86"><Data ss:Type="String">  深圳大学学生成绩登记表  </Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:MergeAcross="21" ss:StyleID="s87"><Data ss:Type="String">2020-2021学年第一学期</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="16.5">
+    <Cell ss:StyleID="s19"/>
+    <Cell ss:MergeAcross="2" ss:StyleID="s20"><Data ss:Type="String">2020/10/13</Data></Cell>
+    <Cell ss:StyleID="s20"/>
+    <Cell ss:MergeAcross="9" ss:StyleID="s89"><Data ss:Type="String">共25人</Data></Cell>
+    <Cell ss:MergeAcross="1" ss:StyleID="s20"/>
+    <Cell ss:MergeAcross="3" ss:StyleID="s90"/>
+    <Cell ss:StyleID="s16"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="17.099999999999998">
+    <Cell ss:MergeAcross="1" ss:StyleID="s23"><Data ss:Type="String">课程编号</Data></Cell>
+    <Cell ss:MergeAcross="1" ss:StyleID="s92"><Data ss:Type="String">1500720002</Data></Cell>
+    <Cell ss:StyleID="s23"><Data ss:Type="String">班号</Data></Cell>
+    <Cell ss:MergeAcross="1" ss:StyleID="s23"><Data ss:Type="String">04</Data></Cell>
+    <Cell ss:MergeAcross="2" ss:StyleID="s23"><Data ss:Type="String">开课单位</Data></Cell>
+    <Cell ss:MergeAcross="4" ss:StyleID="s93"><Data ss:Type="String">计算机与软件学院</Data></Cell>
+    <Cell ss:MergeAcross="1" ss:StyleID="s93"><Data ss:Type="String">课程名</Data></Cell>
+    <Cell ss:MergeAcross="4" ss:StyleID="s93"><Data ss:Type="String">软件工程</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="17.099999999999998">
+    <Cell ss:MergeAcross="1" ss:StyleID="s23"><Data ss:Type="String">课程类别</Data></Cell>
+    <Cell ss:MergeAcross="1" ss:StyleID="s93"><Data ss:Type="String">专业核心课</Data></Cell>
+    <Cell ss:StyleID="s23"><Data ss:Type="String">学分</Data></Cell>
+    <Cell ss:MergeAcross="1" ss:StyleID="s23"><Data ss:Type="String">3</Data></Cell>
+    <Cell ss:MergeAcross="2" ss:StyleID="s23"><Data ss:Type="String">主讲教师</Data></Cell>
+    <Cell ss:MergeAcross="11" ss:StyleID="s93"><Data ss:Type="String">毛斐巧</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="16.5">
+    <Cell ss:MergeDown="2" ss:StyleID="s26"><Data ss:Type="String">序号</Data></Cell>
+    <Cell ss:MergeDown="2" ss:StyleID="s26"><Data ss:Type="String">学号</Data></Cell>
+    <Cell ss:MergeDown="2" ss:StyleID="s26"><Data ss:Type="String">姓名</Data></Cell>
+    <Cell ss:MergeDown="2" ss:StyleID="s26"><Data ss:Type="String">性别</Data></Cell>
+    <Cell ss:MergeAcross="2" ss:MergeDown="2" ss:StyleID="s26"><Data
+      ss:Type="String">主修专业</Data></Cell>
+    <Cell ss:MergeAcross="10" ss:StyleID="s87"><Data ss:Type="String">平时考核方式与结果</Data></Cell>
+    <Cell ss:MergeDown="2" ss:StyleID="s95"><Data ss:Type="String">平时总评成绩</Data></Cell>
+    <Cell ss:MergeDown="2" ss:StyleID="s95"><Data ss:Type="String">期末基本题成绩</Data></Cell>
+    <Cell ss:MergeDown="2" ss:StyleID="s95"><Data ss:Type="String">期末附加题成绩</Data></Cell>
+    <Cell ss:MergeDown="2" ss:StyleID="s28"><Data ss:Type="String">备注</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="14.25">
+    <Cell ss:Index="8" ss:StyleID="s26"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="Number">2</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="Number">3</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="Number">4</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="Number">5</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="Number">6</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="Number">7</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="Number">8</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="Number">9</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="Number">10</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="Number">11</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="24.15">
+    <Cell ss:Index="8" ss:StyleID="s29"/>
+    <Cell ss:StyleID="s29"/>
+    <Cell ss:StyleID="s29"/>
+    <Cell ss:StyleID="s29"/>
+    <Cell ss:StyleID="s29"/>
+    <Cell ss:StyleID="s29"/>
+    <Cell ss:StyleID="s29"/>
+    <Cell ss:StyleID="s29"/>
+    <Cell ss:StyleID="s29"/>
+    <Cell ss:StyleID="s29"/>
+    <Cell ss:StyleID="s29"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="27.299999999999997">
+    <Cell ss:StyleID="s28"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s28"><Data ss:Type="String">2013150203</Data></Cell>
+    <Cell ss:StyleID="s28"><Data ss:Type="String">丘金昊</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">男</Data></Cell>
+    <Cell ss:MergeAcross="2" ss:StyleID="s97"><Data ss:Type="String">计算机科学与技术</Data></Cell>
+    <Cell ss:StyleID="s29"/>
+    <Cell ss:StyleID="s29"/>
+    <Cell ss:StyleID="s29"/>
+    <Cell ss:StyleID="s29"/>
+    <Cell ss:StyleID="s29"/>
+    <Cell ss:StyleID="s29"/>
+    <Cell ss:StyleID="s29"/>
+    <Cell ss:StyleID="s29"/>
+    <Cell ss:StyleID="s29"/>
+    <Cell ss:StyleID="s29"/>
+    <Cell ss:StyleID="s29"/>
+    <Cell ss:StyleID="s29"/>
+    <Cell ss:StyleID="s29"/>
+    <Cell ss:StyleID="s29"/>
+    <Cell ss:StyleID="s31"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="27.299999999999997">
+    <Cell ss:StyleID="s28"><Data ss:Type="Number">2</Data></Cell>
+    <Cell ss:StyleID="s28"><Data ss:Type="String">2016150021</Data></Cell>
+    <Cell ss:StyleID="s28"><Data ss:Type="String">杨端</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">男</Data></Cell>
+    <Cell ss:MergeAcross="2" ss:StyleID="s97"><Data ss:Type="String">计算机科学与技术</Data></Cell>
+    <Cell ss:StyleID="s29"/>
+    <Cell ss:StyleID="s29"/>
+    <Cell ss:StyleID="s29"/>
+    <Cell ss:StyleID="s29"/>
+    <Cell ss:StyleID="s29"/>
+    <Cell ss:StyleID="s29"/>
+    <Cell ss:StyleID="s29"/>
+    <Cell ss:StyleID="s29"/>
+    <Cell ss:StyleID="s29"/>
+    <Cell ss:StyleID="s29"/>
+    <Cell ss:StyleID="s29"/>
+    <Cell ss:StyleID="s29"/>
+    <Cell ss:StyleID="s29"/>
+    <Cell ss:StyleID="s29"/>
+    <Cell ss:StyleID="s31"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="27.299999999999997">
+    <Cell ss:StyleID="s28"><Data ss:Type="Number">3</Data></Cell>
+    <Cell ss:StyleID="s28"><Data ss:Type="String">2016150132</Data></Cell>
+    <Cell ss:StyleID="s28"><Data ss:Type="String">李远贵</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">男</Data></Cell>
+    <Cell ss:MergeAcross="2" ss:StyleID="s97"><Data ss:Type="String">计算机科学与技术</Data></Cell>
+    <Cell ss:StyleID="s29"/>
+    <Cell ss:StyleID="s29"/>
+    <Cell ss:StyleID="s29"/>
+    <Cell ss:StyleID="s29"/>
+    <Cell ss:StyleID="s29"/>
+    <Cell ss:StyleID="s29"/>
+    <Cell ss:StyleID="s29"/>
+    <Cell ss:StyleID="s29"/>
+    <Cell ss:StyleID="s29"/>
+    <Cell ss:StyleID="s29"/>
+    <Cell ss:StyleID="s29"/>
+    <Cell ss:StyleID="s29"/>
+    <Cell ss:StyleID="s29"/>
+    <Cell ss:StyleID="s29"/>
+    <Cell ss:StyleID="s31"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="27.299999999999997">
+    <Cell ss:StyleID="s28"><Data ss:Type="Number">4</Data></Cell>
+    <Cell ss:StyleID="s28"><Data ss:Type="String">2016150171</Data></Cell>
+    <Cell ss:StyleID="s28"><Data ss:Type="String">韩灼夫</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">男</Data></Cell>
+    <Cell ss:MergeAcross="2" ss:StyleID="s97"><Data ss:Type="String">计算机科学与技术</Data></Cell>
+    <Cell ss:StyleID="s29"/>
+    <Cell ss:StyleID="s29"/>
+    <Cell ss:StyleID="s29"/>
+    <Cell ss:StyleID="s29"/>
+    <Cell ss:StyleID="s29"/>
+    <Cell ss:StyleID="s29"/>
+    <Cell ss:StyleID="s29"/>
+    <Cell ss:StyleID="s29"/>
+    <Cell ss:StyleID="s29"/>
+    <Cell ss:StyleID="s29"/>
+    <Cell ss:StyleID="s29"/>
+    <Cell ss:StyleID="s29"/>
+    <Cell ss:StyleID="s29"/>
+    <Cell ss:StyleID="s29"/>
+    <Cell ss:StyleID="s31"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="27.299999999999997">
+    <Cell ss:StyleID="s28"><Data ss:Type="Number">5</Data></Cell>
+    <Cell ss:StyleID="s28"><Data ss:Type="String">2017151056</Data></Cell>
+    <Cell ss:StyleID="s28"><Data ss:Type="String">梁煜辉</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">男</Data></Cell>
+    <Cell ss:MergeAcross="2" ss:StyleID="s97"><Data ss:Type="String">软件工程</Data></Cell>
+    <Cell ss:StyleID="s29"/>
+    <Cell ss:StyleID="s29"/>
+    <Cell ss:StyleID="s29"/>
+    <Cell ss:StyleID="s29"/>
+    <Cell ss:StyleID="s29"/>
+    <Cell ss:StyleID="s29"/>
+    <Cell ss:StyleID="s29"/>
+    <Cell ss:StyleID="s29"/>
+    <Cell ss:StyleID="s29"/>
+    <Cell ss:StyleID="s29"/>
+    <Cell ss:StyleID="s29"/>
+    <Cell ss:StyleID="s29"/>
+    <Cell ss:StyleID="s29"/>
+    <Cell ss:StyleID="s29"/>
+    <Cell ss:StyleID="s31"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="27.299999999999997">
+    <Cell ss:StyleID="s28"><Data ss:Type="Number">6</Data></Cell>
+    <Cell ss:StyleID="s28"><Data ss:Type="String">2017152066</Data></Cell>
+    <Cell ss:StyleID="s28"><Data ss:Type="String">廖浩然</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">男</Data></Cell>
+    <Cell ss:MergeAcross="2" ss:StyleID="s97"><Data ss:Type="String">计算机科学与技术</Data></Cell>
+    <Cell ss:StyleID="s29"/>
+    <Cell ss:StyleID="s29"/>
+    <Cell ss:StyleID="s29"/>
+    <Cell ss:StyleID="s29"/>
+    <Cell ss:StyleID="s29"/>
+    <Cell ss:StyleID="s29"/>
+    <Cell ss:StyleID="s29"/>
+    <Cell ss:StyleID="s29"/>
+    <Cell ss:StyleID="s29"/>
+    <Cell ss:StyleID="s29"/>
+    <Cell ss:StyleID="s29"/>
+    <Cell ss:StyleID="s29"/>
+    <Cell ss:StyleID="s29"/>
+    <Cell ss:StyleID="s29"/>
+    <Cell ss:StyleID="s31"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="27.299999999999997">
+    <Cell ss:StyleID="s28"><Data ss:Type="Number">7</Data></Cell>
+    <Cell ss:StyleID="s28"><Data ss:Type="String">2017152071</Data></Cell>
+    <Cell ss:StyleID="s28"><Data ss:Type="String">莫虎之</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">男</Data></Cell>
+    <Cell ss:MergeAcross="2" ss:StyleID="s97"><Data ss:Type="String">计算机科学与技术</Data></Cell>
+    <Cell ss:StyleID="s29"/>
+    <Cell ss:StyleID="s29"/>
+    <Cell ss:StyleID="s29"/>
+    <Cell ss:StyleID="s29"/>
+    <Cell ss:StyleID="s29"/>
+    <Cell ss:StyleID="s29"/>
+    <Cell ss:StyleID="s29"/>
+    <Cell ss:StyleID="s29"/>
+    <Cell ss:StyleID="s29"/>
+    <Cell ss:StyleID="s29"/>
+    <Cell ss:StyleID="s29"/>
+    <Cell ss:StyleID="s29"/>
+    <Cell ss:StyleID="s29"/>
+    <Cell ss:StyleID="s29"/>
+    <Cell ss:StyleID="s31"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="27.299999999999997">
+    <Cell ss:StyleID="s28"><Data ss:Type="Number">8</Data></Cell>
+    <Cell ss:StyleID="s28"><Data ss:Type="String">2017152095</Data></Cell>
+    <Cell ss:StyleID="s28"><Data ss:Type="String">王庆洲</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">男</Data></Cell>
+    <Cell ss:MergeAcross="2" ss:StyleID="s97"><Data ss:Type="String">计算机科学与技术</Data></Cell>
+    <Cell ss:StyleID="s29"/>
+    <Cell ss:StyleID="s29"/>
+    <Cell ss:StyleID="s29"/>
+    <Cell ss:StyleID="s29"/>
+    <Cell ss:StyleID="s29"/>
+    <Cell ss:StyleID="s29"/>
+    <Cell ss:StyleID="s29"/>
+    <Cell ss:StyleID="s29"/>
+    <Cell ss:StyleID="s29"/>
+    <Cell ss:StyleID="s29"/>
+    <Cell ss:StyleID="s29"/>
+    <Cell ss:StyleID="s29"/>
+    <Cell ss:StyleID="s29"/>
+    <Cell ss:StyleID="s29"/>
+    <Cell ss:StyleID="s31"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="27.299999999999997">
+    <Cell ss:StyleID="s28"><Data ss:Type="Number">9</Data></Cell>
+    <Cell ss:StyleID="s28"><Data ss:Type="String">2017153035</Data></Cell>
+    <Cell ss:StyleID="s28"><Data ss:Type="String">李伟锋</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">男</Data></Cell>
+    <Cell ss:MergeAcross="2" ss:StyleID="s97"><Data ss:Type="String">网络工程</Data></Cell>
+    <Cell ss:StyleID="s29"/>
+    <Cell ss:StyleID="s29"/>
+    <Cell ss:StyleID="s29"/>
+    <Cell ss:StyleID="s29"/>
+    <Cell ss:StyleID="s29"/>
+    <Cell ss:StyleID="s29"/>
+    <Cell ss:StyleID="s29"/>
+    <Cell ss:StyleID="s29"/>
+    <Cell ss:StyleID="s29"/>
+    <Cell ss:StyleID="s29"/>
+    <Cell ss:StyleID="s29"/>
+    <Cell ss:StyleID="s29"/>
+    <Cell ss:StyleID="s29"/>
+    <Cell ss:StyleID="s29"/>
+    <Cell ss:StyleID="s31"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="27.299999999999997">
+    <Cell ss:StyleID="s28"><Data ss:Type="Number">10</Data></Cell>
+    <Cell ss:StyleID="s28"><Data ss:Type="String">2017303008</Data></Cell>
+    <Cell ss:StyleID="s28"><Data ss:Type="String">黄志鹏</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">男</Data></Cell>
+    <Cell ss:MergeAcross="2" ss:StyleID="s97"><Data ss:Type="String">计算机科学与技术</Data></Cell>
+    <Cell ss:StyleID="s29"/>
+    <Cell ss:StyleID="s29"/>
+    <Cell ss:StyleID="s29"/>
+    <Cell ss:StyleID="s29"/>
+    <Cell ss:StyleID="s29"/>
+    <Cell ss:StyleID="s29"/>
+    <Cell ss:StyleID="s29"/>
+    <Cell ss:StyleID="s29"/>
+    <Cell ss:StyleID="s29"/>
+    <Cell ss:StyleID="s29"/>
+    <Cell ss:StyleID="s29"/>
+    <Cell ss:StyleID="s29"/>
+    <Cell ss:StyleID="s29"/>
+    <Cell ss:StyleID="s29"/>
+    <Cell ss:StyleID="s31"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="27.299999999999997">
+    <Cell ss:StyleID="s28"><Data ss:Type="Number">11</Data></Cell>
+    <Cell ss:StyleID="s28"><Data ss:Type="String">2018025028</Data></Cell>
+    <Cell ss:StyleID="s28"><Data ss:Type="String">王子阳</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">男</Data></Cell>
+    <Cell ss:MergeAcross="2" ss:StyleID="s97"><Data ss:Type="String">经济学</Data></Cell>
+    <Cell ss:StyleID="s29"/>
+    <Cell ss:StyleID="s29"/>
+    <Cell ss:StyleID="s29"/>
+    <Cell ss:StyleID="s29"/>
+    <Cell ss:StyleID="s29"/>
+    <Cell ss:StyleID="s29"/>
+    <Cell ss:StyleID="s29"/>
+    <Cell ss:StyleID="s29"/>
+    <Cell ss:StyleID="s29"/>
+    <Cell ss:StyleID="s29"/>
+    <Cell ss:StyleID="s29"/>
+    <Cell ss:StyleID="s29"/>
+    <Cell ss:StyleID="s29"/>
+    <Cell ss:StyleID="s29"/>
+    <Cell ss:StyleID="s31"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="27.299999999999997">
+    <Cell ss:StyleID="s28"><Data ss:Type="Number">12</Data></Cell>
+    <Cell ss:StyleID="s28"><Data ss:Type="String">2018151022</Data></Cell>
+    <Cell ss:StyleID="s28"><Data ss:Type="String">曾庆恒</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">男</Data></Cell>
+    <Cell ss:MergeAcross="2" ss:StyleID="s97"><Data ss:Type="String">软件工程</Data></Cell>
+    <Cell ss:StyleID="s29"/>
+    <Cell ss:StyleID="s29"/>
+    <Cell ss:StyleID="s29"/>
+    <Cell ss:StyleID="s29"/>
+    <Cell ss:StyleID="s29"/>
+    <Cell ss:StyleID="s29"/>
+    <Cell ss:StyleID="s29"/>
+    <Cell ss:StyleID="s29"/>
+    <Cell ss:StyleID="s29"/>
+    <Cell ss:StyleID="s29"/>
+    <Cell ss:StyleID="s29"/>
+    <Cell ss:StyleID="s29"/>
+    <Cell ss:StyleID="s29"/>
+    <Cell ss:StyleID="s29"/>
+    <Cell ss:StyleID="s31"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="27.299999999999997">
+    <Cell ss:StyleID="s28"><Data ss:Type="Number">13</Data></Cell>
+    <Cell ss:StyleID="s28"><Data ss:Type="String">2018151070</Data></Cell>
+    <Cell ss:StyleID="s28"><Data ss:Type="String">黄乃建</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">男</Data></Cell>
+    <Cell ss:MergeAcross="2" ss:StyleID="s97"><Data ss:Type="String">软件工程</Data></Cell>
+    <Cell ss:StyleID="s29"/>
+    <Cell ss:StyleID="s29"/>
+    <Cell ss:StyleID="s29"/>
+    <Cell ss:StyleID="s29"/>
+    <Cell ss:StyleID="s29"/>
+    <Cell ss:StyleID="s29"/>
+    <Cell ss:StyleID="s29"/>
+    <Cell ss:StyleID="s29"/>
+    <Cell ss:StyleID="s29"/>
+    <Cell ss:StyleID="s29"/>
+    <Cell ss:StyleID="s29"/>
+    <Cell ss:StyleID="s29"/>
+    <Cell ss:StyleID="s29"/>
+    <Cell ss:StyleID="s29"/>
+    <Cell ss:StyleID="s31"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="27.299999999999997">
+    <Cell ss:StyleID="s28"><Data ss:Type="Number">14</Data></Cell>
+    <Cell ss:StyleID="s28"><Data ss:Type="String">2018152031</Data></Cell>
+    <Cell ss:StyleID="s28"><Data ss:Type="String">周泽滨</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">男</Data></Cell>
+    <Cell ss:MergeAcross="2" ss:StyleID="s97"><Data ss:Type="String">计算机科学与技术</Data></Cell>
+    <Cell ss:StyleID="s29"/>
+    <Cell ss:StyleID="s29"/>
+    <Cell ss:StyleID="s29"/>
+    <Cell ss:StyleID="s29"/>
+    <Cell ss:StyleID="s29"/>
+    <Cell ss:StyleID="s29"/>
+    <Cell ss:StyleID="s29"/>
+    <Cell ss:StyleID="s29"/>
+    <Cell ss:StyleID="s29"/>
+    <Cell ss:StyleID="s29"/>
+    <Cell ss:StyleID="s29"/>
+    <Cell ss:StyleID="s29"/>
+    <Cell ss:StyleID="s29"/>
+    <Cell ss:StyleID="s29"/>
+    <Cell ss:StyleID="s31"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="27.299999999999997">
+    <Cell ss:StyleID="s28"><Data ss:Type="Number">15</Data></Cell>
+    <Cell ss:StyleID="s28"><Data ss:Type="String">2018152053</Data></Cell>
+    <Cell ss:StyleID="s28"><Data ss:Type="String">黄家豪</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">男</Data></Cell>
+    <Cell ss:MergeAcross="2" ss:StyleID="s97"><Data ss:Type="String">计算机科学与技术</Data></Cell>
+    <Cell ss:StyleID="s29"/>
+    <Cell ss:StyleID="s29"/>
+    <Cell ss:StyleID="s29"/>
+    <Cell ss:StyleID="s29"/>
+    <Cell ss:StyleID="s29"/>
+    <Cell ss:StyleID="s29"/>
+    <Cell ss:StyleID="s29"/>
+    <Cell ss:StyleID="s29"/>
+    <Cell ss:StyleID="s29"/>
+    <Cell ss:StyleID="s29"/>
+    <Cell ss:StyleID="s29"/>
+    <Cell ss:StyleID="s29"/>
+    <Cell ss:StyleID="s29"/>
+    <Cell ss:StyleID="s29"/>
+    <Cell ss:StyleID="s31"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="27.299999999999997">
+    <Cell ss:StyleID="s28"><Data ss:Type="Number">16</Data></Cell>
+    <Cell ss:StyleID="s28"><Data ss:Type="String">2018152071</Data></Cell>
+    <Cell ss:StyleID="s28"><Data ss:Type="String">林乐天</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">男</Data></Cell>
+    <Cell ss:MergeAcross="2" ss:StyleID="s97"><Data ss:Type="String">计算机科学与技术</Data></Cell>
+    <Cell ss:StyleID="s29"/>
+    <Cell ss:StyleID="s29"/>
+    <Cell ss:StyleID="s29"/>
+    <Cell ss:StyleID="s29"/>
+    <Cell ss:StyleID="s29"/>
+    <Cell ss:StyleID="s29"/>
+    <Cell ss:StyleID="s29"/>
+    <Cell ss:StyleID="s29"/>
+    <Cell ss:StyleID="s29"/>
+    <Cell ss:StyleID="s29"/>
+    <Cell ss:StyleID="s29"/>
+    <Cell ss:StyleID="s29"/>
+    <Cell ss:StyleID="s29"/>
+    <Cell ss:StyleID="s29"/>
+    <Cell ss:StyleID="s31"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="27.299999999999997">
+    <Cell ss:StyleID="s28"><Data ss:Type="Number">17</Data></Cell>
+    <Cell ss:StyleID="s28"><Data ss:Type="String">2018152075</Data></Cell>
+    <Cell ss:StyleID="s28"><Data ss:Type="String">张李恒</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">男</Data></Cell>
+    <Cell ss:MergeAcross="2" ss:StyleID="s97"><Data ss:Type="String">计算机科学与技术</Data></Cell>
+    <Cell ss:StyleID="s29"/>
+    <Cell ss:StyleID="s29"/>
+    <Cell ss:StyleID="s29"/>
+    <Cell ss:StyleID="s29"/>
+    <Cell ss:StyleID="s29"/>
+    <Cell ss:StyleID="s29"/>
+    <Cell ss:StyleID="s29"/>
+    <Cell ss:StyleID="s29"/>
+    <Cell ss:StyleID="s29"/>
+    <Cell ss:StyleID="s29"/>
+    <Cell ss:StyleID="s29"/>
+    <Cell ss:StyleID="s29"/>
+    <Cell ss:StyleID="s29"/>
+    <Cell ss:StyleID="s29"/>
+    <Cell ss:StyleID="s31"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="27.299999999999997">
+    <Cell ss:StyleID="s28"><Data ss:Type="Number">18</Data></Cell>
+    <Cell ss:StyleID="s28"><Data ss:Type="String">2018152076</Data></Cell>
+    <Cell ss:StyleID="s28"><Data ss:Type="String">刘浦江</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">男</Data></Cell>
+    <Cell ss:MergeAcross="2" ss:StyleID="s97"><Data ss:Type="String">计算机科学与技术</Data></Cell>
+    <Cell ss:StyleID="s29"/>
+    <Cell ss:StyleID="s29"/>
+    <Cell ss:StyleID="s29"/>
+    <Cell ss:StyleID="s29"/>
+    <Cell ss:StyleID="s29"/>
+    <Cell ss:StyleID="s29"/>
+    <Cell ss:StyleID="s29"/>
+    <Cell ss:StyleID="s29"/>
+    <Cell ss:StyleID="s29"/>
+    <Cell ss:StyleID="s29"/>
+    <Cell ss:StyleID="s29"/>
+    <Cell ss:StyleID="s29"/>
+    <Cell ss:StyleID="s29"/>
+    <Cell ss:StyleID="s29"/>
+    <Cell ss:StyleID="s31"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="27.299999999999997">
+    <Cell ss:StyleID="s28"><Data ss:Type="Number">19</Data></Cell>
+    <Cell ss:StyleID="s28"><Data ss:Type="String">2018152085</Data></Cell>
+    <Cell ss:StyleID="s28"><Data ss:Type="String">于洁</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">女</Data></Cell>
+    <Cell ss:MergeAcross="2" ss:StyleID="s97"><Data ss:Type="String">计算机科学与技术</Data></Cell>
+    <Cell ss:StyleID="s29"/>
+    <Cell ss:StyleID="s29"/>
+    <Cell ss:StyleID="s29"/>
+    <Cell ss:StyleID="s29"/>
+    <Cell ss:StyleID="s29"/>
+    <Cell ss:StyleID="s29"/>
+    <Cell ss:StyleID="s29"/>
+    <Cell ss:StyleID="s29"/>
+    <Cell ss:StyleID="s29"/>
+    <Cell ss:StyleID="s29"/>
+    <Cell ss:StyleID="s29"/>
+    <Cell ss:StyleID="s29"/>
+    <Cell ss:StyleID="s29"/>
+    <Cell ss:StyleID="s29"/>
+    <Cell ss:StyleID="s31"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="27.299999999999997">
+    <Cell ss:StyleID="s28"><Data ss:Type="Number">20</Data></Cell>
+    <Cell ss:StyleID="s28"><Data ss:Type="String">2018152096</Data></Cell>
+    <Cell ss:StyleID="s28"><Data ss:Type="String">李万昌</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">男</Data></Cell>
+    <Cell ss:MergeAcross="2" ss:StyleID="s97"><Data ss:Type="String">计算机科学与技术</Data></Cell>
+    <Cell ss:StyleID="s29"/>
+    <Cell ss:StyleID="s29"/>
+    <Cell ss:StyleID="s29"/>
+    <Cell ss:StyleID="s29"/>
+    <Cell ss:StyleID="s29"/>
+    <Cell ss:StyleID="s29"/>
+    <Cell ss:StyleID="s29"/>
+    <Cell ss:StyleID="s29"/>
+    <Cell ss:StyleID="s29"/>
+    <Cell ss:StyleID="s29"/>
+    <Cell ss:StyleID="s29"/>
+    <Cell ss:StyleID="s29"/>
+    <Cell ss:StyleID="s29"/>
+    <Cell ss:StyleID="s29"/>
+    <Cell ss:StyleID="s31"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="27.299999999999997">
+    <Cell ss:StyleID="s28"><Data ss:Type="Number">21</Data></Cell>
+    <Cell ss:StyleID="s28"><Data ss:Type="String">2018152109</Data></Cell>
+    <Cell ss:StyleID="s28"><Data ss:Type="String">王薪富</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">男</Data></Cell>
+    <Cell ss:MergeAcross="2" ss:StyleID="s97"><Data ss:Type="String">计算机科学与技术</Data></Cell>
+    <Cell ss:StyleID="s29"/>
+    <Cell ss:StyleID="s29"/>
+    <Cell ss:StyleID="s29"/>
+    <Cell ss:StyleID="s29"/>
+    <Cell ss:StyleID="s29"/>
+    <Cell ss:StyleID="s29"/>
+    <Cell ss:StyleID="s29"/>
+    <Cell ss:StyleID="s29"/>
+    <Cell ss:StyleID="s29"/>
+    <Cell ss:StyleID="s29"/>
+    <Cell ss:StyleID="s29"/>
+    <Cell ss:StyleID="s29"/>
+    <Cell ss:StyleID="s29"/>
+    <Cell ss:StyleID="s29"/>
+    <Cell ss:StyleID="s31"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="27.299999999999997">
+    <Cell ss:StyleID="s28"><Data ss:Type="Number">22</Data></Cell>
+    <Cell ss:StyleID="s28"><Data ss:Type="String">2018152110</Data></Cell>
+    <Cell ss:StyleID="s28"><Data ss:Type="String">赵启旗</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">男</Data></Cell>
+    <Cell ss:MergeAcross="2" ss:StyleID="s97"><Data ss:Type="String">计算机科学与技术</Data></Cell>
+    <Cell ss:StyleID="s29"/>
+    <Cell ss:StyleID="s29"/>
+    <Cell ss:StyleID="s29"/>
+    <Cell ss:StyleID="s29"/>
+    <Cell ss:StyleID="s29"/>
+    <Cell ss:StyleID="s29"/>
+    <Cell ss:StyleID="s29"/>
+    <Cell ss:StyleID="s29"/>
+    <Cell ss:StyleID="s29"/>
+    <Cell ss:StyleID="s29"/>
+    <Cell ss:StyleID="s29"/>
+    <Cell ss:StyleID="s29"/>
+    <Cell ss:StyleID="s29"/>
+    <Cell ss:StyleID="s29"/>
+    <Cell ss:StyleID="s31"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="27.299999999999997">
+    <Cell ss:StyleID="s28"><Data ss:Type="Number">23</Data></Cell>
+    <Cell ss:StyleID="s28"><Data ss:Type="String">2018152117</Data></Cell>
+    <Cell ss:StyleID="s28"><Data ss:Type="String">赖泽锋</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">男</Data></Cell>
+    <Cell ss:MergeAcross="2" ss:StyleID="s97"><Data ss:Type="String">计算机科学与技术</Data></Cell>
+    <Cell ss:StyleID="s29"/>
+    <Cell ss:StyleID="s29"/>
+    <Cell ss:StyleID="s29"/>
+    <Cell ss:StyleID="s29"/>
+    <Cell ss:StyleID="s29"/>
+    <Cell ss:StyleID="s29"/>
+    <Cell ss:StyleID="s29"/>
+    <Cell ss:StyleID="s29"/>
+    <Cell ss:StyleID="s29"/>
+    <Cell ss:StyleID="s29"/>
+    <Cell ss:StyleID="s29"/>
+    <Cell ss:StyleID="s29"/>
+    <Cell ss:StyleID="s29"/>
+    <Cell ss:StyleID="s29"/>
+    <Cell ss:StyleID="s31"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="27.299999999999997">
+    <Cell ss:StyleID="s28"><Data ss:Type="Number">24</Data></Cell>
+    <Cell ss:StyleID="s28"><Data ss:Type="String">2018152121</Data></Cell>
+    <Cell ss:StyleID="s28"><Data ss:Type="String">黄嘉慧</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">女</Data></Cell>
+    <Cell ss:MergeAcross="2" ss:StyleID="s97"><Data ss:Type="String">计算机科学与技术</Data></Cell>
+    <Cell ss:StyleID="s29"/>
+    <Cell ss:StyleID="s29"/>
+    <Cell ss:StyleID="s29"/>
+    <Cell ss:StyleID="s29"/>
+    <Cell ss:StyleID="s29"/>
+    <Cell ss:StyleID="s29"/>
+    <Cell ss:StyleID="s29"/>
+    <Cell ss:StyleID="s29"/>
+    <Cell ss:StyleID="s29"/>
+    <Cell ss:StyleID="s29"/>
+    <Cell ss:StyleID="s29"/>
+    <Cell ss:StyleID="s29"/>
+    <Cell ss:StyleID="s29"/>
+    <Cell ss:StyleID="s29"/>
+    <Cell ss:StyleID="s31"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="27.299999999999997">
+    <Cell ss:StyleID="s28"><Data ss:Type="Number">25</Data></Cell>
+    <Cell ss:StyleID="s28"><Data ss:Type="String">2018172020</Data></Cell>
+    <Cell ss:StyleID="s28"><Data ss:Type="String">林芷悦</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">女</Data></Cell>
+    <Cell ss:MergeAcross="2" ss:StyleID="s97"><Data ss:Type="String">计算机科学与技术</Data></Cell>
+    <Cell ss:StyleID="s29"/>
+    <Cell ss:StyleID="s29"/>
+    <Cell ss:StyleID="s29"/>
+    <Cell ss:StyleID="s29"/>
+    <Cell ss:StyleID="s29"/>
+    <Cell ss:StyleID="s29"/>
+    <Cell ss:StyleID="s29"/>
+    <Cell ss:StyleID="s29"/>
+    <Cell ss:StyleID="s29"/>
+    <Cell ss:StyleID="s29"/>
+    <Cell ss:StyleID="s29"/>
+    <Cell ss:StyleID="s29"/>
+    <Cell ss:StyleID="s29"/>
+    <Cell ss:StyleID="s29"/>
+    <Cell ss:StyleID="s31"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="14.25">
+    <Cell ss:MergeAcross="21" ss:StyleID="s16"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="16.5">
+    <Cell ss:StyleID="s32"/>
+    <Cell ss:MergeAcross="3" ss:StyleID="s98"><Data ss:Type="String">主讲教师：</Data></Cell>
+    <Cell ss:MergeAcross="16" ss:StyleID="s99"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="21.150000000000002">
+    <Cell ss:StyleID="s35"/>
+    <Cell ss:MergeAcross="12" ss:StyleID="s36"/>
+    <Cell ss:MergeAcross="4" ss:StyleID="s101"><Data ss:Type="String">年       月       日</Data></Cell>
+    <Cell ss:StyleID="s36"/>
+    <Cell ss:MergeAcross="1" ss:StyleID="s102"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="24.9">
+    <Cell ss:Index="2" ss:StyleID="s16"/>
+    <Cell ss:StyleID="s16"/>
+    <Cell ss:StyleID="s16"/>
+    <Cell ss:StyleID="s16"/>
+    <Cell ss:StyleID="s16"/>
+    <Cell ss:StyleID="s16"/>
+    <Cell ss:StyleID="s16"/>
+    <Cell ss:StyleID="s16"/>
+    <Cell ss:StyleID="s16"/>
+    <Cell ss:StyleID="s16"/>
+    <Cell ss:StyleID="s16"/>
+    <Cell ss:StyleID="s16"/>
+    <Cell ss:StyleID="s16"/>
+    <Cell ss:StyleID="s16"/>
+    <Cell ss:StyleID="s16"/>
+    <Cell ss:StyleID="s16"/>
+    <Cell ss:StyleID="s16"/>
+    <Cell ss:StyleID="s16"/>
+    <Cell ss:StyleID="s16"/>
+    <Cell ss:StyleID="s16"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="14.25">
+    <Cell ss:Index="2" ss:StyleID="s16"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="14.25">
+    <Cell ss:Index="2" ss:StyleID="s16"/>
+    <Cell ss:Index="12" ss:StyleID="s16"/>
+   </Row>
+  </Table>
+  <WorksheetOptions xmlns="urn:schemas-microsoft-com:office:excel">
+   <PageSetup>
+    <Header x:Margin="0"/>
+    <Footer x:Margin="0"/>
+    <PageMargins x:Bottom="0.26899999380111694" x:Left="0.11800000071525574"
+     x:Right="0.11800000071525574" x:Top="0.26899999380111694"/>
+   </PageSetup>
+   <Print>
+    <ValidPrinterInfo/>
+    <PaperSizeIndex>9</PaperSizeIndex>
+    <HorizontalResolution>600</HorizontalResolution>
+    <VerticalResolution>600</VerticalResolution>
+   </Print>
+   <Selected/>
+   <Panes>
+    <Pane>
+     <Number>3</Number>
+     <RangeSelection>R1C1:R1C22</RangeSelection>
+    </Pane>
+   </Panes>
+   <ProtectObjects>False</ProtectObjects>
+   <ProtectScenarios>False</ProtectScenarios>
+  </WorksheetOptions>
+ </Worksheet>
+</Workbook>
