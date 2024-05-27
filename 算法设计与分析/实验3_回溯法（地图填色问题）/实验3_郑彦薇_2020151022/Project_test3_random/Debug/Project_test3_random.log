@@ -1,0 +1,7 @@
+﻿  源.cpp
+C:\Users\4334\source\repos\Project_test3_random\源.cpp(34,10): warning C4244: “初始化”: 从“double”转换到“int”，可能丢失数据
+C:\Users\4334\source\repos\Project_test3_random\源.cpp(34,16): warning C4056: 浮点常量算术溢出
+C:\Users\4334\source\repos\Project_test3_random\源.cpp(53,10): warning C4244: “初始化”: 从“double”转换到“int”，可能丢失数据
+C:\Users\4334\source\repos\Project_test3_random\源.cpp(53,16): warning C4056: 浮点常量算术溢出
+C:\Users\4334\source\repos\Project_test3_random\源.cpp(113,15): warning C4244: “=”: 从“__int64”转换到“int”，可能丢失数据
+  Project_test3_random.vcxproj -> C:\Users\4334\source\repos\Project_test3_random\Debug\Project_test3_random.exe

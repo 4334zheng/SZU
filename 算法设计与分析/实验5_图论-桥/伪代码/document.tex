@@ -1,0 +1,57 @@
+\documentclass[11pt]{ctexart}  
+\usepackage[top=2cm, bottom=2cm, left=2cm, right=2cm]{geometry}  
+\usepackage{algorithm}  
+\usepackage{algorithmicx}  
+\usepackage{algpseudocode}  
+\usepackage{amsmath}  
+
+\floatname{algorithm}{算法}
+\renewcommand{\algorithmicrequire}{\textbf{输入:}}  
+\renewcommand{\algorithmicensure}{\textbf{输出:}}  
+
+\begin{document}  
+	\begin{algorithm}  
+		\renewcommand{\thealgorithm}{2}
+		\caption{基准法+并查集计算桥的数量}  
+		\begin{algorithmic}[1] %每行显示行号  
+			\Require $vexnum$顶点数，$arcnum$边数，$edge$边信息  
+			\Ensure $Count$桥的数量  
+			\Function {JoinSetInit}{}  
+			\For{$i = 0 \to vexnum$}  
+			\State $father[i] \gets i$  
+			\EndFor 
+			\EndFunction  
+			\State  
+			\Function{JoinSetFind}{$v$}  
+			\If{$father[v] == v$}
+			\State \Return{$v$}   
+			\EndIf
+			\State $father[v] \gets $ \Call{JoinSetFind}{father[v]}
+			\State \Return{$father[v]$}  
+			\EndFunction  
+			\State
+			\Function{JoinSetCount}{}  
+			\State $ansbefore \gets $ \Call{DFSTraverse}{}    
+			\For{$i = 0 \to arcnum$}  
+			\State \Call{init}{}  
+			\State \Call{JoinSetInit}{}
+			\State $res \gets vexnum$
+			\For{$j = 0 \to arcnum$} 
+			\If{$i == j$}
+			\State $continue$
+			\EndIf
+			\State $f1 \gets $ \Call{JoinSetFind}{edge[j][0]}
+			\State $f2 \gets $ \Call{JoinSetFind}{edge[j][1]}
+			\If{$f1 != f2$}
+			\State $father[f2] \gets f1$
+			\State $res--$
+			\EndIf
+			\EndFor
+			\If{$res != ansbefore$}
+			\State $Count++$
+			\EndIf
+			\EndFor   
+			\EndFunction  
+		\end{algorithmic}  
+	\end{algorithm}  
+\end{document}  
